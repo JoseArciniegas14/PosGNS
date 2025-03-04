@@ -1,5 +1,24 @@
 # PosGNS
+
 POS System
+
+## DOCKER
+
+### 🚀 Cómo Usarlo
+
+- 1️⃣ Levantar los contenedores en modo desarrollo:
+
+docker-compose up
+
+- 2️⃣ Ahora puedes modificar archivos en backend/ o frontend/ y los cambios se reflejarán automáticamente en los contenedores.
+
+- 3️⃣ Para detener los contenedores sin borrarlos:
+
+docker-compose down
+
+- 4️⃣ Si hiciste cambios en package.json o pnpm-lock.yaml, corre esto para actualizar las dependencias dentro de los contenedores:
+
+docker-compose up --build
 
 Este es el sistema POS de GNS
 
@@ -86,19 +105,19 @@ Principios clave:
 El frontend de la aplicación seguirá una arquitectura modular basada en componentes reutilizables:
 
 - **Layout Principal:**
-    - Barra de navegación superior con perfil de usuario y configuración.
-    - Menú lateral con accesos a módulos principales.
-    - Área de contenido dinámico según la sección activa.
+  - Barra de navegación superior con perfil de usuario y configuración.
+  - Menú lateral con accesos a módulos principales.
+  - Área de contenido dinámico según la sección activa.
 - **Páginas principales:**
-    - **Dashboard:** Resumen de ventas, productos más vendidos y actividad reciente.
-    - **Inventario:** Gestión de productos, alertas de stock bajo.
-    - **Ventas:** Procesamiento de ventas y emisión de comprobantes.
-    - **Clientes:** Registro y consulta de clientes.
-    - **Caja:** Apertura y cierre de caja, historial de movimientos.
-    - **Reportes:** Estadísticas y análisis de ventas.
+  - **Dashboard:** Resumen de ventas, productos más vendidos y actividad reciente.
+  - **Inventario:** Gestión de productos, alertas de stock bajo.
+  - **Ventas:** Procesamiento de ventas y emisión de comprobantes.
+  - **Clientes:** Registro y consulta de clientes.
+  - **Caja:** Apertura y cierre de caja, historial de movimientos.
+  - **Reportes:** Estadísticas y análisis de ventas.
 - **Componentes reutilizables:**
-    - Botones, formularios, modales y tablas optimizadas para una experiencia fluida.
-    - Notificaciones visuales para alertas e información relevante.
+  - Botones, formularios, modales y tablas optimizadas para una experiencia fluida.
+  - Notificaciones visuales para alertas e información relevante.
 
 ## **7. Endpoints y Uso del Backend**
 
@@ -143,13 +162,13 @@ El frontend de la aplicación seguirá una arquitectura modular basada en compon
 
 Se utilizará **Scrum** como metodología de desarrollo para garantizar una entrega iterativa y funcional. Las fases incluirán:
 
-| Fase | Actividades |
-| --- | --- |
-| 1. Análisis y Diseño | Definición de requisitos y arquitectura. |
-| 2. Desarrollo Backend | API con NestJS y Prisma. |
-| 3. Desarrollo Frontend | Interfaz con Next.js y consumo de API. |
-| 4. Pruebas | Seguridad, rendimiento y UX. |
-| 5. Despliegue | Implementación en servidores y mejoras futuras. |
+| Fase                   | Actividades                                     |
+| ---------------------- | ----------------------------------------------- |
+| 1. Análisis y Diseño   | Definición de requisitos y arquitectura.        |
+| 2. Desarrollo Backend  | API con NestJS y Prisma.                        |
+| 3. Desarrollo Frontend | Interfaz con Next.js y consumo de API.          |
+| 4. Pruebas             | Seguridad, rendimiento y UX.                    |
+| 5. Despliegue          | Implementación en servidores y mejoras futuras. |
 
 ## **9. Seguridad y Escalabilidad**
 
